@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOSTAV 2026</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100">
+
+    <div class="max-w-2xl mx-auto mt-10 bg-white p-8 rounded-xl shadow-xl border-4 border-blue-600">
+
+        <h1 class="text-4xl font-bold text-center text-blue-700">
+            S.B. Jain College, Nagpur
+        </h1>
+
+        <h2 class="text-2xl font-semibold text-center text-purple-700 mt-3">
+            TECHNOSTAV 2026
+        </h2>
+
+        <p class="text-center text-gray-600 mt-2">
+            Annual Technical Festival
+        </p>
+
+        <hr class="my-6 border-2 border-blue-500">
+
+        <p class="text-center text-gray-700">
+            We warmly invite all students and faculty members to participate in
+            Coding Competition, Hackathon, AI Workshop, Robotics and Technical Quiz.
+        </p>
+
+        <!-- Event Details -->
+        <div class="mt-6 bg-gray-100 p-4 rounded-lg border-2 border-green-500">
+            <p><b>📅 Date:</b> 20 August 2026</p>
+            <p><b>⏰ Time:</b> 10:00 AM</p>
+            <p><b>📍 Venue:</b> S.B. Jain College, Nagpur</p>
+        </div>
+
+        <!-- Registration Form -->
+        <h3 class="text-xl font-bold text-center text-blue-700 mt-8 mb-4">
+            Registration Form
+        </h3>
+
+        <form>
+
+            <input type="text"
+                placeholder="Enter Full Name"
+                class="w-full p-3 mb-3 border-2 border-blue-400 rounded-lg">
+
+            <input type="email"
+                placeholder="Enter Email"
+                class="w-full p-3 mb-3 border-2 border-blue-400 rounded-lg">
+
+            <input type="tel"
+                placeholder="Enter Mobile Number"
+                class="w-full p-3 mb-3 border-2 border-blue-400 rounded-lg">
+
+            <select class="w-full p-3 mb-4 border-2 border-blue-400 rounded-lg">
+                <option>Select Event</option>
+                <option>Hackathon</option>
+                <option>Coding Competition</option>
+                <option>AI Workshop</option>
+                <option>Technical Quiz</option>
+            </select>
+
+            <button
+                class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-800">
+                Register Now
+            </button>
+
+        </form>
+
+        <p class="text-center mt-6 text-gray-600">
+            <b>See You at TECHNOSTAV 2026!</b>
+        </p>
+
+    </div>
+
+</body>
+</html>
