@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive FAQ</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .faq-question {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .faq-question:hover {
+            background-color: #0056b3;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="faq-container">
+        <h1>College Help Portal - FAQ</h1>
+
+        <div class="faq">
+            <div class="faq-question">1. What is the college timing?</div>
+            <div class="faq-answer">
+                The college timing is generally from 9:00 AM to 5:00 PM.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">2. How can I get my college ID card?</div>
+            <div class="faq-answer">
+                You can collect your ID card from the college administration office.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">3. How can I pay my college fees?</div>
+            <div class="faq-answer">
+                College fees can be paid through the available online or offline payment methods.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">4. Where can I check my exam schedule?</div>
+            <div class="faq-answer">
+                You can check the exam schedule on the college notice board or student portal.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question">5. How can I contact the college office?</div>
+            <div class="faq-answer">
+                You can contact the college office during working hours.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all FAQ questions
+        const questions = document.querySelectorAll(".faq-question");
+
+        // Add click event to each question
+        questions.forEach(function(question) {
+
+            question.addEventListener("click", function() {
+
+                // Find the answer corresponding to the question
+                const answer = question.nextElementSibling;
+
+                // Show or hide the answer
+                answer.classList.toggle("active");
+            });
+
+        });
+    </script>
+
+</body>
+</html>
